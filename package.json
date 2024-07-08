@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "cypress": "^13.11.0",
+    "cypress-terminal-report": "^6.1.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "playwright-webkit": "1.34"
+  },
+  "dependencies": {
+    "ajv": "^8.16.0",
+    "cypress-plugin-api": "^2.11.1"
+  },
+  "scripts": {
+    "merge-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports"
+  }
+}
